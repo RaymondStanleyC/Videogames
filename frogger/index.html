@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Effective JavaScript: Frogger</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+</head>
+<body class="animated fadeIn">
+    <div class="player">
+        <h1 class="animated bounce">Cambiar Personaje: </h1>
+        <button onclick= "cambiarPersonaje('images/char-boy.png')"><img src="images/char-boy.png"/></button>
+        <button onclick= "cambiarPersonaje('images/char-cat-girl.png')" id="cat-girl"><img src="images/char-cat-girl.png"/></button>
+        <button onclick= "cambiarPersonaje('images/char-horn-girl.png')"><img src="images/char-horn-girl.png"/></button>
+        <button onclick= "cambiarPersonaje('images/char-pink-girl.png')"><img src="images/char-pink-girl.png"/></button>
+        <button onclick= "cambiarPersonaje('images/char-princess-girl.png')"><img src="images/char-princess-girl.png"/></button>
+    </div>
+    <div class="player">
+        <h1 class="animated bounce">Nivel: </h1>
+        <button onclick= "changeLevel(1)">REALLY EASY</button>
+        <button onclick= "changeLevel(2)">EASY</button>
+        <button onclick= "changeLevel(3)">NORMAL</button>
+        <button onclick= "changeLevel(4)">HARD</button>
+        <button onclick= "changeLevel(5)">HARDCORE</button>
+        <button onclick= "changeLevel(1000)">BETTER HAVE A FAST BROWSER</button>
+    </div>
+    <script src="js/resources.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/engine.js"></script>
+</body>
+</html>
